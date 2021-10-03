@@ -1,0 +1,4 @@
+node_modules
+**/btc
+package-lock.json
+**/.DS_Store
