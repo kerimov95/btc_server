@@ -6,7 +6,7 @@
     "debug": "DEBUG=btc:* nodemon -r dotenv/config ./bin/www",
     "btc_start": "bash ./rpc/scripts/btc_start.sh",
     "btc_stop": "bash ./rpc/scripts/btc_stop.sh",
-    "start": "node -r dotenv/config ./bin/www"
+    "start": "pm2 start ecosystem.config.js"
   },
   "dependencies": {
     "axios": "^0.22.0",

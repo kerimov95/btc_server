@@ -1,0 +1,16 @@
+module.exports = {
+    apps: [
+        {
+            name: "btc_server",
+            script: "./bin/www",
+            watch: true,
+            env: {
+                "rpc_ip": "127.0.0.1",
+                "rpc_port": 1234,
+                "rpc_user": "username",
+                "rpc_password": "password",
+                "rpc_wallet": "wallet1",
+                "PORT": 4041
+            }
+        }]
+}
