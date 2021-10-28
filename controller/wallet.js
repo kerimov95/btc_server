@@ -6,7 +6,7 @@ exports.balance = async (req, res) => {
 }
 
 exports.send = async (req, res) => {
-    const { address, amount } = req.body;
+    const { address, amount } = req.query;
     const result = await rpc.send(address, amount);
     setTimeout(() => {
         rpc.generate()
