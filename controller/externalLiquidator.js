@@ -5,10 +5,13 @@ exports.MerchantSettleOrder = async (req, res) => {
     const { amount, client_order_id, pair } = req.body;
 
     res.json({
-        status: true,
-        amount,
-        request: { pair },
-        order_id: client_order_id
+        statusCode: 201,
+        data: {
+            status: true,
+            amount,
+            request: { pair },
+            order_id: client_order_id
+        }
     })
 }
 
